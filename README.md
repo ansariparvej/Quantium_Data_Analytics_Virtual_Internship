@@ -28,13 +28,13 @@ We need to present a strategic recommendation to Julia that is supported by data
 #### Data Cleaning:
 - Date column was in integer format. So the date column was changed to date time format.
 - There are 365 days in a year but in the DATE column there are only 364 unique values so one was missing. As it was a Christmas day and store was closed there was no anomaly. Value was kept as zero transaction for "TOT_SALES".
-![December sales](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%201/December_Sales.png)
+![December sales](https://github.com/ansariparvej/Quantium_Data_Analytics_Virtual_Internship/blob/main/Data%20Visualizations/Task%201/December_Sales.png)
 - Checked if all the products in given data are chips.
 -  Some product names are written in more than one way. Example : Dorito and Doritos, Grains and GrnWves, Infusions and Ifzns, Natural and NCC, Red and RRD, Smith and Smiths and Snbts and Sunbites. It was cleaned thereafter.
 - Split and frequency of each word in "PROD_NAME" column. Removed all rows containing "salsa" in "PROD_QTY" column.
 - Checked for outliers and removed outliers rows in "PROD_QTY" column.
 - Each word value was counted in "PROD_NAME" column to extract the brand name. Combined brands written in multiple ways. Created a new column "Cleaned_Brand_Names".
-![Cleaned Brand Names](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%201/Brand_Names.png)
+![Cleaned Brand Names](https://github.com/ansariparvej/Quantium_Data_Analytics_Virtual_Internship/blob/main/Data%20Visualizations/Task%201/Brand_Names.png)
 
 #### Data Analysis on Customer Segments
 - The 4 main questions answered in data analysis were:
@@ -44,13 +44,13 @@ We need to present a strategic recommendation to Julia that is supported by data
 4. What's the average chip price by customer segment
 - Groupby sum TOT_SALES column and identified top 3 highest total sales contributing segments.
 - Plot the groupby into stacked bar chart with percentage text on each segment stack.
-![Total Sales by Segment](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%201/Stage_Plot1.png)
+![Total Sales by Segment](https://github.com/ansariparvej/Quantium_Data_Analytics_Virtual_Internship/blob/main/Data%20Visualizations/Task%201/Stage_Plot1.png)
 - The high sales amount by segment "Young Singles/Couples - Mainstream" and "Retirees - Mainstream" are due to their large number of unique customers, but not for the "Older - Budget" segment. Next we'll explore if the "Older - Budget" segment has:
 High Frequency of Purchase and, Average Sales per Customer compared to the other segment.
 - Used p-value calculation and found statistically significant TOT_SALES difference (pval < 5%) between "Mainstream Young Midage" to "Budget and Premium Young Midage" segment.
 - Divided groupby sum to groupby nunique to get average amount of chips bought per customer segment. Older and Young Families bought the highest average amount of chips.
 - Unstacked the groupby and plotted it by segment:
-![Average Chips per Customer](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%201/Average_Purchase.png)
+![Average Chips per Customer](https://github.com/ansariparvej/Quantium_Data_Analytics_Virtual_Internship/blob/main/Data%20Visualizations/Task%201/Average_Purchase.png)
 
 #### Trends and Insights
 - Top 3 total sales contributor segment are
@@ -136,9 +136,9 @@ March and April trial months for trial store 77
 
 Feb, March and April trial months for trial store 86
 
-![Total Sales Trial vs Control1](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%202/Compare%20performance%201.png) 
-![Total Sales Trial vs Control2](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%202/Compare%20performance%202.png) 
-![Total Sales Trial vs Control3](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%202/Compare%20performance%203.png)
+![Total Sales Trial vs Control1](https://github.com/ansariparvej/Quantium_Data_Analytics_Virtual_Internship/blob/main/Data%20Visualizations/Task%202/Compare%20performance%201.png) 
+![Total Sales Trial vs Control2](https://github.com/ansariparvej/Quantium_Data_Analytics_Virtual_Internship/blob/main/Data%20Visualizations/Task%202/Compare%20performance%202.png) 
+![Total Sales Trial vs Control3](https://github.com/ansariparvej/Quantium_Data_Analytics_Virtual_Internship/blob/main/Data%20Visualizations/Task%202/Compare%20performance%203.png)
 ![nCustomers Trial vs Control1](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%202/Full_Year_Observations%204.png) 
 ![nCustomers Trial vs Control2](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%202/Full_Year_Observations%205.png) 
 ![nCustomers Trial vs Control3](https://github.com/ShrishtiHore/Quantium_Virtual_Experience_Program/blob/main/Data%20Visualizations/Task%202/Full_Year_Observations%206.png)
